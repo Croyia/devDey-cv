@@ -183,8 +183,7 @@ header{
     left: 20%;
     right: 20%;
     height: 300px;
-    background-image: linear-gradient(to right, rgba(15, 40, 94, 0.466), rgba(0, 40, 121, 0.562));
-    border: 1px solid rgba(255, 241, 51, 0.158);    
+    background-image: linear-gradient(to right, rgba(15, 40, 94, 0.466), rgba(0, 40, 121, 0.562));   
     border-radius: 8px;
     box-shadow: 0 2px 8px rgb(36, 36, 36);
 }
@@ -305,6 +304,7 @@ header{
 }
 
 .projects-card{
+    position:relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -360,7 +360,7 @@ header{
 
 .lang-holder{
     position: absolute;
-    bottom: 42px;
+    bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -498,7 +498,7 @@ header{
 
 .light-mode-body, 
 .light-mode-header {
-    background-image: linear-gradient(to left, rgb(26, 91, 253), rgb(28, 64, 136));
+    background-image: linear-gradient(to left, rgb(4, 54, 180), rgb(28, 64, 136));
 }
 
 
