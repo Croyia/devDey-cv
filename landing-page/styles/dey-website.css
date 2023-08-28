@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    background-color: rgb(38, 38, 38);
+    height: 3000px;
+
+}
+
+li, a, button{
+   font-family: "Montserrat", sans-serif; 
+   font-weight: 500;
+   font-size: 12px;
+   color: white;
+   text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: rgb(42, 42, 42);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px -2px 6px rgb(255, 255, 109);
+
+}
+
+.logo{
+    width: 120px;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.nav-links li a:hover{
+    color: rgb(255, 255, 109);
+}
+
+.contactButton{
+    padding: 10px 24px;
+    color: rgb(43, 43, 43);
+    font-weight: bold;
+    background-color: rgb(255, 233, 87);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.contactButton:hover{
+    box-shadow: 0px 0px 6px rgb(255, 255, 109);
+    
+}
+
+.contactButton:active{
+    margin-top: -4px;
+}
+
+.floatingToggle{
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    left: 1300px;
+    cursor: pointer;
+}
+
+.brightness{
+    width: 75px;
+    transition: ease-in-out 0.2s;
+}
+
+.brightness:hover{
+    width: 85px;
+    
+}
+
