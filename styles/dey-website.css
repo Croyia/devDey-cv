@@ -92,6 +92,8 @@ header{
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 24px;
+    z-index: 1;
+    margin-right: 200px;
 }
 
 .greeting{
@@ -149,8 +151,10 @@ header{
 
 .portrait{
     position: absolute;
-    right:25%;
-    top:30%
+    right:22%;
+    top:30%;
+    margin-left: 200px;
+    z-index: 1;
 }
 
 .portrait-size{
@@ -276,6 +280,7 @@ header{
 
 .projects-main{
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     position: absolute;
     top: 250%;
@@ -497,4 +502,33 @@ header{
 }
 
 
+@media (width <= 1650px) {
+    .portrait{
+        position: absolute;
+        right:15%;
+        top:30%
+    }
 
+    .skills-main{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 170%;
+        left: 10%;
+        right: 10%;
+        height: 600px;
+        padding: 0;
+        
+    }
+
+    .about-me-paragraph{
+        display: flex;
+        font-family: "Montserrat", sans-serif;;
+        margin-right: 50px;
+        font-size: 12px;
+        color: white;
+        line-height: 2;
+    }
+}
