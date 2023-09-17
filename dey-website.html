@@ -21,7 +21,7 @@
             <a href="#contact"><button class="contactButton">Contact</button></a>
         </header>  
 
-        <div class="intro">
+        <div class="intro hidden">
             <div class="intro-content">
 
                 <h3 class="greeting">Hellooo!! <img src="images/wave.png" class="wave"></h3>
@@ -45,11 +45,11 @@
             </div>
         </div>
 
-        <div class="portrait">
+        <div class="portrait hidden">
             <img src="images/portrait-edited.png" class="portrait-size">
         </div>
 
-        <div class="about-me">
+        <div class="about-me hidden">
             <h1 class="about-me-title">About Me</h1>
             <div class="about-me-main">
 
@@ -66,7 +66,7 @@
 
         <div class="skills-anchor-point" id="skills"></div>
         
-        <div class="skills">
+        <div class="skills hidden">
 
              <h1 class="skills-title">Skills</h1>
 
@@ -90,7 +90,7 @@
         <div class="projects-anchor-point" id="projects"></div>
 
 
-        <div class="projects">
+        <div class="projects hidden">
 
             <div class="projects-main">
                 <h1 class="projects-title">Projects</h1>
@@ -234,18 +234,26 @@
 
         <div class="contact-anchor-point" id="contact"></div>
 
-        <div class="contact">
+        <div class="contact hidden">
 
             <div class="contact-main">
                 <p class="contact-title"><strong>Same taste?</strong></p>
 
                 <p class="contact-sub"> Let's connect!</p>
 
-                <input type="text" placeholder="beHappy@email.com" class="email-input" id="inputEmail">
+                <form action="mailto:andreilee0822@gmail.com" method="post" style="display: flex; flex-direction: column;
+                align-items: center;" enctype="text/plain">
 
-                <button class="email-button" onclick="alertEmail()">
-                    Save my email!
-                </button>
+                    <input type="text" placeholder="Your Name" class="email-input" id="inputName" name="Name">
+
+                    <input type="email" placeholder="Your Email" class="email-input" id="inputEmail" name="Email">
+
+                    <textarea rows="5" cols="100%" placeholder="Your Message..." class="email-input" name="Message"></textarea>
+
+                    <input type="submit" value="Send message!" class="email-button" name="">
+                   
+                </form>
+                
 
                 <div class="contact-socials">
 
@@ -267,7 +275,7 @@
 
         <button class="floatingToggle" onclick="toggleBrightness()"><img src="images/sun.png" class="brightness" id="floater"></button>
 
-        <script src="scripts/dey-website.js">
+        <script defer src="scripts/dey-website.js">
 
         </script>
     </body>

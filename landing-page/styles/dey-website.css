@@ -75,6 +75,7 @@ header{
 
 .floatingToggle{
     background-color: transparent;
+    width: 78px;
     border: none;
     position: fixed;
     bottom: 40px;

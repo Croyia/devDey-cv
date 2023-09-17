@@ -8,7 +8,7 @@ html {
 
 body{
     background-image: linear-gradient(to left, rgb(10, 22, 48), rgb(3, 32, 88));
-    height: 3600px;
+    height: 3800px;
 
 }
 
@@ -99,7 +99,7 @@ header{
 .greeting{
     margin-top: 5px;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.61);
 }
@@ -113,6 +113,7 @@ header{
 .intro-name{
     margin-top: 5px;
     margin-bottom: 0px;
+    font-size: 56px;
 }
 
 .gradient-text{
@@ -166,7 +167,7 @@ header{
     position: absolute;
     top: 100%;
     left: 44.5%;
-    font-size: 48px;
+    font-size: 58px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: rgb(252,223,89);
@@ -186,6 +187,21 @@ header{
     background-image: linear-gradient(to right, rgba(15, 40, 94, 0.466), rgba(0, 40, 121, 0.562));   
     border-radius: 8px;
     box-shadow: 0 2px 8px rgb(36, 36, 36);
+}
+
+.face{
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.about-me-paragraph{
+    display: flex;
+    font-family: "Montserrat", sans-serif;;
+    margin-right: 50px;
+    font-size: 18px;
+    color: white;
+    line-height: 2;
 }
 
 .skills-anchor-point{
@@ -256,20 +272,7 @@ header{
     margin-top: 60px;
 }
 
-.face{
-    width: 250px;
-    margin-top: 25px;
-    margin-left: 30px;
-}
 
-.about-me-paragraph{
-    display: flex;
-    font-family: "Montserrat", sans-serif;;
-    margin-right: 50px;
-    font-size: 18px;
-    color: white;
-    line-height: 2;
-}
 
 .projects-anchor-point{
     position: absolute;
@@ -395,7 +398,8 @@ header{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 330%;
+    top: 315%;
+    bottom: 15%;
     left: 20%;
     right: 20%;
     height: 400px;
@@ -499,6 +503,17 @@ header{
 .light-mode-body, 
 .light-mode-header {
     background-image: linear-gradient(to left, rgb(4, 54, 180), rgb(28, 64, 136));
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 0.8s;
+    min-height: 90vh;
+}
+
+.show{
+    opacity: 1;
+    min-height: 90vh;
 }
 
 
