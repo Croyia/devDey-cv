@@ -8,7 +8,7 @@ html {
 
 body{
     background-image: linear-gradient(to left, rgb(10, 22, 48), rgb(3, 32, 88));
-    height: 3800px;
+    height: 3750px;
 
 }
 
@@ -167,7 +167,7 @@ header{
     position: absolute;
     top: 100%;
     left: 44.5%;
-    font-size: 58px;
+    font-size: 42px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: rgb(252,223,89);
