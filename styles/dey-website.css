@@ -623,7 +623,6 @@ header{
     position: fixed;
     bottom: 40px;
     right: 200px;
-    left: 1600px;
     cursor: pointer;
     padding: 0px;
     margin: 0px;
@@ -750,6 +749,17 @@ header{
     .contact{
         top: 520%;
     }
+
+    .floatingToggle{
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 40px;
+        right: 75px;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -759,7 +769,6 @@ header{
         top: 15%;
     }
 
-    
 
     .intro-content{
         align-items: center;
@@ -861,6 +870,19 @@ header{
     .email-button:active{
         width: 180px;
     }
+
+    .floatingToggle{
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 40px;
+        right: 50px;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+        z-index: 2;
+    }
+    
 }
 
 
