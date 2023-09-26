@@ -568,11 +568,11 @@ header{
     border-radius: 8px;
     border: none;
     margin: 8px;
-    width: 200px;
+    width: 300px;
 }
 
 .email-button{
-    width: 200px;
+    width: 300px;
     background-color: rgb(255, 173, 65);
     border: none;
     margin: 12px;
@@ -581,17 +581,17 @@ header{
 }
 
 .email-button:active{
-    width: 180px;
+    width: 280px;
 }
 
 .contact-socials{
     margin-top: 12px;
     margin-bottom: 12px;
     display: flex;
-    column-gap: 20px;
+    column-gap: 40px;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 300px;
 }
 
 .contact-icon{
@@ -848,6 +848,18 @@ header{
 
     .contact{
         top: 520%;
+    }
+
+    .email-input, .email-button{
+        width: 200px;
+    }
+
+    .contact-socials{
+        column-gap: 20px;
+    }
+
+    .email-button:active{
+        width: 180px;
     }
 }
 
