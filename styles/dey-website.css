@@ -8,7 +8,10 @@ html {
 
 body{
     background-image: linear-gradient(to left, rgb(10, 22, 48), rgb(3, 32, 88));
-    height: 4700px;
+    padding-top: 70px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -20,12 +23,16 @@ li, a, button, td{
    text-decoration: none;
 }
 
+button:focus{
+    outline: none;
+}
+
 
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 18%;
+    align-items: start;
+    padding: 14px 18% 4px 18%;
     position: fixed;
     left: 0px;
     right: 0px;
@@ -33,16 +40,59 @@ header{
     background-image: linear-gradient(to right, rgba(15, 40, 94, 0.76), rgba(0, 40, 121, 0.788));
     backdrop-filter: blur(20px);
     box-shadow: 0px -2px 6px rgb(5, 5, 5);
+    min-height: 70px;
     z-index: 2;
 }
 
-.logo{
-    width: 120px;
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(252,223,89, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    margin-top: 2px;
+    margin-bottom: 0px;
+    
+  }
+  
+.custom-toggler .navbar-toggler {
+    border-color: rgb(252,223,89);
+} 
+
+.navbar{
+    flex-direction: column;
+    padding: 0px;
+    margin-top: -4px;
+    margin-bottom: 4px;
 }
 
-.nav-links{
-    list-style: none;
+.navbar-collapse {
+    margin-top: 16px;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out, transform 0.3s ease-in-out;  
+    transform: translateZ(0);
 }
+
+.navbar-collapse.show {
+    margin-top: 0px;
+    margin-bottom: -2px;
+    max-height: 100vh; 
+    overflow: hidden; 
+}
+
+
+.nav-links {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-list{
+    margin-top: 10px;
+}
+
+
+.logo{
+    width: 120px;
+    margin-top: -8px;
+}
+
+
 
 .nav-links li{
     display: inline-block;
@@ -82,21 +132,30 @@ header{
 }
 
 .intro{
+    display: flex;
+    align-items: center;
     position: absolute;
-    top: 40%;
-    left: 25%;
+    top: 30%;
+    width: 1000;
+    
 }
 
 .intro-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 24px;
     z-index: 1;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
+
 .greeting{
+    display: flex;
+    align-items: center;
     margin-top: 5px;
     margin-bottom: 0px;
     font-size: 24px;
@@ -106,8 +165,8 @@ header{
 
 .wave{
     width: 40px;
-    padding-left: 5px;
-    margin-bottom: -5px;
+    margin-top: -5px;
+    margin-left: 4px;
 }
 
 .intro-name{
@@ -150,29 +209,38 @@ header{
     cursor: pointer;
 }
 
-.portrait{
-    position: absolute;
-    right:22%;
-    top:30%;
-    margin-left: 200px;
-    z-index: 1;
-}
 
 .portrait-size{
     height: 400px;
+    margin-left: 150px;
+}
+
+.about-anchor{
+    position: absolute;
+    top: 75%;
 }
 
 
+.about-me{
+    position: absolute;
+    top: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .about-me-title{
     position: absolute;
-    top: 100%;
-    left: 46%;
+    text-align: center;
     font-size: 42px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: rgb(252,223,89);
     text-shadow: 0 2px 4px rgb(12, 12, 12);
     z-index: 1;
+    margin-top: -30px;
+    width: 300px;
 }
 
 
@@ -181,9 +249,7 @@ header{
     align-items: center;
     position: absolute;
     top: 107%;
-    left: 20%;
-    right: 20%;
-    height: 300px;
+    width: 1000px;
     background-image: linear-gradient(to right, rgba(15, 40, 94, 0.466), rgba(0, 40, 121, 0.562));   
     border-radius: 8px;
     box-shadow: 0 2px 8px rgb(36, 36, 36);
@@ -192,13 +258,13 @@ header{
 .face{
     width: 250px;
     margin-top: 25px;
-    margin-left: 30px;
 }
 
 .about-me-paragraph{
+    position: relative;
     display: flex;
-    font-family: "Montserrat", sans-serif;;
-    margin-right: 50px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px 24px 24px 24px;
     font-size: 18px;
     color: white;
     line-height: 2;
@@ -206,14 +272,20 @@ header{
 
 .skills-anchor-point{
     position: absolute;
-    top: 150%;
+    top: 165%;
     left: 47.8%;
 }
 
-.skills-title{
+.skills{
     position: absolute;
-    top: 160%;
-    left: 47.8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 180%;
+}
+
+.skills-title{
+    position: relative;
     font-size: 48px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -223,15 +295,14 @@ header{
 }
 
 .skills-main{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 170%;
-    left: 19%;
-    right: 20%;
-    height: 600px;
+    width: 1000px;
     padding: 0;
     /*background-image: linear-gradient(to right, rgba(15, 40, 94, 0.76), rgba(0, 40, 121, 0.788));
     border: 1px solid rgba(255, 241, 51, 0.158);    
@@ -242,46 +313,53 @@ header{
 .skills-logo{
 
     width: 180px;
-    margin: 65px 65px 65px 95px;
-    transition: ease-in-out 0.15s;
+    margin: 65px 65px 65px 65px;
+    transition: ease-in-out 0.3s;
     
 }
 
 .skills-logo:hover{
-    margin-top: 55px;
+    margin-top: -10px;
 }
 
 .js-logo{
-
     width: 255px;
     margin: 20px 30px 30px 30px;
     transition: ease-in-out 0.15s;
 }
 
 .js-logo:hover{
-    margin-top: 15px;
+    margin-top: -50px;
 }
 
 .python-logo{
     width: 180px;
-    margin: 65px 30px 65px 95px;
+    margin: 65px 65px 65px 65px;
     transition: ease-in-out 0.15s;
 }
 
 .python-logo:hover{
-    margin-top: 60px;
+    margin-top: -10px;
 }
 
 .hobbies-anchor-point{
     position: absolute;
-    top: 245%;
+    top: 250%;
     left: 47.8%;
 }
 
-.hobbies-title{
+.hobbies{
     position: absolute;
-    top: 263%;
-    left: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 280%;
+}
+
+
+.hobbies-title{
+    position: relative;
+    margin-bottom: -25px;
     font-size: 42px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -295,11 +373,9 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 270%;
-    left: 36%;
-    right: 34%;
-    height: 370px;
+    position: relative;
+    width: 550px;
+    height: 350px;
     background-image: linear-gradient(to right, rgba(15, 40, 94, 0.466), rgba(0, 40, 121, 0.562));   
     border-radius: 8px;
     box-shadow: 0 2px 8px rgb(36, 36, 36);
@@ -310,27 +386,42 @@ header{
 .projects-anchor-point{
     position: absolute;
     top: 325%;
-    left: 47.8%;
+}
+
+.projects{
+    position: absolute;
+    top: 345%;
 }
 
 .projects-main{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    position: absolute;
-    top: 350%;
-    left: 0%;
-    right: 0%;
+    justify-content: space-evenly;
+    position: relative; 
+    width: 1000px;
     height: 520px;
-    background-image: linear-gradient(to right, rgba(0, 38, 119, 0.219), rgba(0, 62, 187, 0.233));   
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgb(36, 36, 36);
+    
 }
 
+.carousel-inner{
+    width: 400px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.973);
+    z-index: 1;
+}
+
+#carouselExampleControls .carousel-control-prev, 
+#carouselExampleControls .carousel-control-next {
+    background-color: transparent;
+    border: none;
+    color: transparent; 
+}
 
 .projects-title{
+    /*
     margin-left: 220px;
     margin-right: 100px;
+    */
     font-size: 48px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -339,34 +430,42 @@ header{
     z-index: 1;
 }
 
+.project-cards{
+    display: flex;
+    align-items: center;
+}
+
 .projects-card{
     position:relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(31, 43, 55, 0.37);
-    width: 280px;
+    width: 400px;
     height: 450px;
-    margin-right: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.973);
     border-radius: 0px 0px 8px 8px;
     transition: ease-in-out 0.15s;
 }
 
-.projects-card:hover{
+/*.projects-card:hover{
     margin-top: -8px;
+}*/
+
+.carousel-control-next, .carousel-control-prev{
+
 }
 
 .img-holder{
+    margin-top: 24px;
     width: 280px;
-    height: 150;
 }
 
 .desc-holder{
     display: flex;
     flex-direction: column;
-    align-items: start;
-    margin-top: 5px;
+    align-items: center;
+    margin-top: 20px;
     margin-left: 0px;
     width: 225px;
     flex: 1;
@@ -379,6 +478,7 @@ header{
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 .card-title:hover{
@@ -389,8 +489,9 @@ header{
 .card-desc{
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
-    padding-right: 26px;
+    margin-top: 14px;
     color: white;
+    text-align: center;
     line-height: 2;
 }
 
@@ -399,7 +500,7 @@ header{
     bottom: 10px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     column-gap: 14px;
     width: 225px;
     flex: 0.4;
@@ -413,6 +514,7 @@ header{
     text-align: center;
     transition: ease-in-out 0.15s;
     cursor: pointer;
+    margin-bottom: 26px;
 }
 
 .lang-text:hover{
@@ -423,19 +525,21 @@ header{
 .contact-anchor-point{
     position: absolute;
     top: 400%;
-    left: 47.8%;
 }
+
+.contact{
+    position: absolute;
+    top: 425%;
+    margin-bottom: 100px;
+}
+
 
 .contact-main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 425%;
-    bottom: 10%;
-    left: 20%;
-    right: 20%;
-    height: 400px;
+    position: relative;
+    max-height: 80vh;
     /*background-image: linear-gradient(to right, rgba(15, 40, 94, 0.76), rgba(0, 40, 121, 0.788));
     border: 1px solid rgba(255, 241, 51, 0.158);    
     border-radius: 8px;
@@ -509,7 +613,7 @@ header{
     margin-top: 10px;
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 12px;
+    margin-bottom: 200px;
 }
 
 
@@ -518,9 +622,11 @@ header{
     border: none;
     position: fixed;
     bottom: 40px;
-    right: 40px;
-    left: 1500px;
+    right: 200px;
+    left: 1600px;
     cursor: pointer;
+    padding: 0px;
+    margin: 0px;
 }
 
 .brightness{
@@ -538,19 +644,215 @@ header{
     background-image: linear-gradient(to left, rgb(27, 42, 80), rgb(6, 49, 134));
 }
 
-.hidden{
-    opacity: 0;
-    transition: all 0.8s;
-    min-height: 90vh;
+
+
+
+
+@media (max-width: 1100px) {
+    
+    header{
+        justify-content: center;
+    }
+
+    .intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+        top: 15%;
+    }
+
+    
+
+    .intro-content{
+        align-items: center;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portrait-size{
+        margin-left: 0px;
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-anchor{
+        top: 95%;
+    }
+
+    .about-me-main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 650px;
+    }
+
+    .about-me-paragraph{
+        text-align: center;
+    }
+
+
+    .skills-anchor-point{
+        top: 190%;
+    }
+
+    .skills{
+        top: 200%;
+    }
+
+    .skills-main{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 170%;
+        width: 800px;
+        padding: 0;
+    }
+
+
+    .hobbies-anchor-point{
+        top: 300%;
+    }
+
+    .hobbies{
+        top: 330%;
+        width: 400px;
+    }
+
+    .projects-anchor-point{
+        top: 390%;
+    }
+
+
+    .projects{
+        top: 420%;
+    }
+    
+    .projects-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-title{
+        margin-left: 50px;
+    }
+
+    .contact-anchor-point{
+        top: 510%;
+    }
+
+
+    .contact{
+        top: 520%;
+    }
 }
 
-.show{
-    opacity: 1;
-    min-height: 90vh;
+@media (max-width: 650px) {
+    .intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+        top: 15%;
+    }
+
+    
+
+    .intro-content{
+        align-items: center;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portrait-size{
+        margin-left: 0px;
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-anchor{
+        top: 95%;
+    }
+
+    .about-me-main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+
+    .about-me-paragraph{
+        text-align: center;
+    }
+
+
+    .skills-anchor-point{
+        top: 190%;
+    }
+
+    .skills{
+        top: 200%;
+    }
+
+    .skills-main{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 170%;
+        width: 800px;
+        padding: 0;
+    }
+
+
+    .hobbies-anchor-point{
+        top: 300%;
+    }
+
+    .hobbies{
+        top: 330%;
+        width: 400px;
+    }
+
+    .projects-anchor-point{
+        top: 390%;
+    }
+
+
+    .projects{
+        top: 420%;
+    }
+    
+    .projects-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-title{
+        margin-left: 50px;
+    }
+
+    .contact-anchor-point{
+        top: 510%;
+    }
+
+
+    .contact{
+        top: 520%;
+    }
 }
 
 
-@media (width <= 1650px) {
+/*@media (width <= 1650px) {
     .portrait{
         position: absolute;
         right:15%;
@@ -580,3 +882,4 @@ header{
         line-height: 2;
     }
 }
+*/

@@ -3,52 +3,86 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/dey-website.css">
         <link rel="icon" href="images/lightning.png">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+        <script src="scripts/dey-website.js"></script>
         <title>devDey</title>
     </head>
     <body id="home">
         <header>
+
             <img src="images/devDey.png" alt="logo" class="logo">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
+
+            <nav class="navbar navbar-expand-lg navbar-expand-md">
+
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="nav-links navbar-nav" style="text-align: center;">
+                        <li class="nav-list">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#hobbies" class="nav-link">Hobbies</a>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <a href="#contact"><button class="contactButton">Contact</button></a>
         </header>  
 
         <div class="intro">
             <div class="intro-content">
+                    
+                    <h3 class="greeting">Hellooo!! <img src="images/wave.png" class="wave"></h3>
 
-                <h3 class="greeting">Hellooo!! <img src="images/wave.png" class="wave"></h3>
-
-                <h1 class="intro-name">I'm <span class="gradient-text">Andrei Lee </span>
-                </h1>
-
-                <h2 class="intro-title">Powerful Development</h3>
-
-                <div class="socials">
-
-                    <a href="https://www.instagram.com/dedeydump/" target="_blank"><button class="icon-buttons"><img src="images/instagram.png" class="icon-size" id="about"></button></a>
-
-                    <a href="mailto:andreilee0822@gmail.com" target="_blank"><button class="icon-buttons"><img src="images/gmail.png" class="icon-size"></button></a>
-
-                    <a href="https://github.com/Croyia" target="_blank"><button class="icon-buttons"><img src="images/github.png" class="icon-size"></button></a>
-
-                    <a href="https://discord.gg/Gy5EKCK7CK" target="_blank"><button class="icon-buttons"><img src="images/discord.png" class="icon-size"></button></a>
-                </div>
+                    <h1 class="intro-name">I'm <span class="gradient-text">Andrei Lee </span>
+                    </h1>
+    
+                    <h2 class="intro-title">Powerful Development</h3>
+    
+                    <div class="socials">
+    
+                        <a href="https://www.instagram.com/dedeydump/" target="_blank"><button class="icon-buttons"><img src="images/instagram.png" class="icon-size" ></button></a>
+    
+                        <a href="mailto:andreilee0822@gmail.com" target="_blank"><button class="icon-buttons"><img src="images/gmail.png" class="icon-size"></button></a>
+    
+                        <a href="https://github.com/Croyia" target="_blank"><button class="icon-buttons"><img src="images/github.png" class="icon-size"></button></a>
+    
+                        <a href="https://discord.gg/Gy5EKCK7CK" target="_blank"><button class="icon-buttons"><img src="images/discord.png" class="icon-size"></button></a>
+                    </div>
+               
 
             </div>
+
+            <div class="portrait">
+                <img src="images/portrait-edited.png" class="portrait-size">
+            </div>
+
         </div>
 
-        <div class="portrait">
-            <img src="images/portrait-edited.png" class="portrait-size">
-        </div>
+       
+        <div class="about-anchor" id="about"></div>
 
         <div class="about-me">
             <h1 class="about-me-title">About Me</h1>
@@ -90,7 +124,7 @@
 
         <div class="hobbies-anchor-point" id="hobbies"></div>
 
-        <div>
+        <div class="hobbies">
             <h1 class="hobbies-title">Favorite Hobbies</h1>
             <div class="hobbies-main">
 
@@ -101,7 +135,7 @@
                                 <td style="font-size: 24px; font-weight: bold;">
                                     Studying
                                 </td>
-                                <td style="font-size: 32px; font-weight: bold;">
+                                <td style="font-size: 32px; font-weight: bold; padding-left: 6px;">
                                     👍👍👍
                                 </td>
                             </tr>
@@ -109,7 +143,7 @@
                                 <td style="font-size: 24px; font-weight: bold;">
                                     Terrarium Design
                                 </td>
-                                <td style="font-size: 32px; font-weight: bold; padding-bottom: 12px;">
+                                <td style="font-size: 32px; font-weight: bold; padding-bottom: 12px; padding-left: 6px">
                                     👍👍👍👍👍
                                 </td>
                             </tr>
@@ -117,7 +151,7 @@
                                 <td style="font-size: 24px; font-weight: bold;">
                                     Badminton
                                 </td>
-                                <td style="font-size: 32px; font-weight: bold; padding-bottom: 12px;">
+                                <td style="font-size: 32px; font-weight: bold; padding-bottom: 12px; padding-left: 6px">
                                     👍👍
                                 </td>
                                
@@ -126,7 +160,7 @@
                                 <td style="font-size: 24px; font-weight: bold;">
                                     Reading Books
                                 </td>
-                                <td style="font-size: 32px; font-weight: bold; padding-bottom: 12px;">
+                                <td style="font-size: 32px; font-weight: bold; padding-bottom: 12px; padding-left: 6px">
                                     👍👍👍👍
                                 </td>
                             </tr>
@@ -144,140 +178,171 @@
         <div class="projects">
 
             <div class="projects-main">
-                <h1 class="projects-title">Projects</h1>
-
-                <div class="projects-card">
-
-                    <div class="img-holder">
-                        <img src="images/project-todo.png" style="width: 280px;">
-                    </div>
-
-                    <div class="desc-holder">
-
-                        <a href="https://croyia.github.io/to-do/11-todo-list.html" target="_blank"><h3 class="card-title">
-                            Todo List
-                        </h3></a>
-
-                        <p class="card-desc">
-                            A todo list where you can add a task and the date when you'll do it. You can also delete completed tasks.
-                        </p>
-                    </div>
-
-                    <div class="lang-holder">
-
-                        <p class="lang-text">
-                            HTML
-                        </p>
-
-                        <p class="lang-text">
-                            CSS
-                        </p>
-
-                        <p class="lang-text">
-                            Javascript
-                        </p>
-                    </div>
-
-
+                <div style="display: flex; flex-direction: column; align-items: center; margin-left: -50px;">
+                    <h1 class="projects-title">Projects</h1>
+                    <img src="images/project-me.png" alt="" style="margin-top: -40px;">
                 </div>
+                
 
-                <div class="projects-card">
+                <div class="project-cards">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+                          </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="projects-card w-400 h-450">
 
-                    <div class="img-holder">
-                        <img src="images/project-rps.png" style="width: 280px;">
-                    </div>
-
-                    <div class="desc-holder">
-
-                        <a href="https://croyia.github.io/rock-paper-scissors/09-rock-paper-scissors.html" target="_blank"><h3 class="card-title">
-                            Rock Paper Scissors
-                        </h3></a>
-
-                        <p class="card-desc">
-                            A short and fun animated game of rock paper scissors!
-                        </p>
-
-                        <div class="lang-holder">
-
-                            <p class="lang-text">
-                                HTML
-                            </p>
+                                <div class="img-holder">
+                                    <img src="images/project-todo.png" style="width: 280px; border-radius: 20px 30px 0px 20px;">
+                                </div>
+            
+                                <div class="desc-holder">
+            
+                                    <a href="https://croyia.github.io/to-do/11-todo-list.html" target="_blank"><h3 class="card-title">
+                                        Todo List
+                                    </h3></a>
+            
+                                    <p class="card-desc">
+                                        A todo list where you can add a task and the date when you'll do it. You can also delete completed tasks.
+                                    </p>
+                                </div>
+            
+                                <div class="lang-holder">
+            
+                                    <p class="lang-text">
+                                        HTML
+                                    </p>
+            
+                                    <p class="lang-text">
+                                        CSS
+                                    </p>
+            
+                                    <p class="lang-text">
+                                        Javascript
+                                    </p>
+                                </div>
+            
+            
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="projects-card w-400 h-450">
     
-                            <p class="lang-text">
-                                CSS
-                            </p>
+                                <div class="img-holder">
+                                    <img src="images/project-rps.png" style="width: 280px; border-radius: 20px 30px 0px 20px;">
+                                </div>
+            
+                                <div class="desc-holder">
+            
+                                    <a href="https://croyia.github.io/rock-paper-scissors/09-rock-paper-scissors.html" target="_blank"><h3 class="card-title">
+                                        Rock Paper Scissors
+                                    </h3></a>
+            
+                                    <p class="card-desc">
+                                        A short and fun animated game of rock paper scissors!
+                                    </p>
+            
+                                    <div class="lang-holder">
+            
+                                        <p class="lang-text">
+                                            HTML
+                                        </p>
+                
+                                        <p class="lang-text">
+                                            CSS
+                                        </p>
+                
+                                        <p class="lang-text">
+                                            Javascript
+                                        </p>
+                                    </div>
+            
+                                </div>
+            
+            
+                            </div>
+                          </div>
+                          <div class="carousel-item w-400 h-450">
+                            <div class="projects-card">
     
-                            <p class="lang-text">
-                                Javascript
-                            </p>
+                                <div class="img-holder">
+                                    <img src="images/project-terr.png" style="width: 280px; border-radius: 20px 30px 0px 20px;">
+                                </div>
+            
+                                <div class="desc-holder">
+            
+                                    <a href="https://github.com/Croyia/terrarium" target="_blank"><h3 class="card-title">
+                                        Automated Terrarium
+                                    </h3></a>
+            
+                                    <p class="card-desc">
+                                        A mini-biodiverse ecosystem built with monitoring and automatic humidfying based on current humidity levels.
+                                    </p>
+            
+                                    <div class="lang-holder">
+            
+                                        <p class="lang-text">
+                                            C++
+                                        </p>
+                
+                                    </div>
+            
+                                </div>
+            
+            
+                            </div>
+            
+                          </div>
+                          <div class="carousel-item">
+                            <div class="projects-card w-400 h-450">
+    
+                                <div class="img-holder">
+                                    <img src="images/project-yt.png" style="width: 280px; border-radius: 20px 30px 0px 20px;">
+                                </div>
+            
+                                <div class="desc-holder">
+            
+                                    <a href="https://croyia.github.io/youtube-clone/youtube.html" target="_blank"><h3 class="card-title">
+                                        Youtube Clone
+                                    </h3></a>
+            
+                                    <p class="card-desc">
+                                        A Youtube clone that applies the most updated UI of the website. It contains mock videos with embedded links.
+                                    </p>
+            
+                                    <div class="lang-holder">
+            
+                                        <p class="lang-text">
+                                            HTML
+                                        </p>
+                
+                                        <p class="lang-text">
+                                            CSS
+                                        </p>
+                
+                                    </div>
+        
+                                </div>
+            
+            
+                            </div>
+                          </div>
                         </div>
-
-                    </div>
-
-
+                       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </button>
+                      </div>
                 </div>
-
-                <div class="projects-card">
-
-                    <div class="img-holder">
-                        <img src="images/project-terr.png" style="width: 280px;">
-                    </div>
-
-                    <div class="desc-holder">
-
-                        <a href="https://github.com/Croyia/terrarium" target="_blank"><h3 class="card-title">
-                            Automated Terrarium
-                        </h3></a>
-
-                        <p class="card-desc">
-                            A mini-biodiverse ecosystem built with monitoring and automatic humidfying based on current humidity levels.
-                        </p>
-
-                        <div class="lang-holder">
-
-                            <p class="lang-text">
-                                C++
-                            </p>
-    
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                <div class="projects-card">
-
-                    <div class="img-holder">
-                        <img src="images/project-yt.png" style="width: 280px;">
-                    </div>
-
-                    <div class="desc-holder">
-
-                        <a href="https://croyia.github.io/youtube-clone/youtube.html" target="_blank"><h3 class="card-title">
-                            Youtube Clone
-                        </h3></a>
-
-                        <p class="card-desc">
-                            A Youtube clone that applies the most updated UI of the website. It contains mock videos with embedded links.
-                        </p>
-
-                        <div class="lang-holder">
-
-                            <p class="lang-text">
-                                HTML
-                            </p>
-    
-                            <p class="lang-text">
-                                CSS
-                            </p>
-    
-                        </div>
-
-                    </div>
-
-
-                </div>
+                
 
             </div>
 
@@ -299,7 +364,7 @@
 
                     <input type="email" placeholder="Your Email" class="email-input" id="inputEmail" name="Email">
 
-                    <textarea rows="5" cols="100%" placeholder="Your Message..." class="email-input" name="Message"></textarea>
+                    <textarea rows="4" cols="100%" placeholder="Your Message..." class="email-input" name="Message"></textarea>
 
                     <input type="submit" value="Send message!" class="email-button" name="">
                    
@@ -308,7 +373,7 @@
 
                 <div class="contact-socials">
 
-                    <a href="https://www.instagram.com/dedeydump/" target="_blank"><button class="icon-buttons"><img src="images/instagram.png" class="contact-icon" id="about"></button></a>
+                    <a href="https://www.instagram.com/dedeydump/" target="_blank"><button class="icon-buttons"><img src="images/instagram.png" class="contact-icon" ></button></a>
 
                     <a href="mailto:andreilee0822@gmail.com" target="_blank"><button class="icon-buttons"><img src="images/gmail.png" class="contact-icon" ></button></a>
 
@@ -325,9 +390,6 @@
 
 
         <button class="floatingToggle" onclick="toggleBrightness()"><img src="images/sun.png" class="brightness" id="floater"></button>
-
-        <script defer src="scripts/dey-website.js">
-
-        </script>
-    </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
