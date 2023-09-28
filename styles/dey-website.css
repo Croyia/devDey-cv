@@ -41,7 +41,7 @@ header{
     backdrop-filter: blur(20px);
     box-shadow: 0px -2px 6px rgb(5, 5, 5);
     min-height: 70px;
-    z-index: 9999;
+    z-index: 2;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -883,9 +883,8 @@ header{
         z-index: 2;
     }
     
-}
 
-@media (max-height: 800px) {
+@media (max-height: 800px), (max-width: 650px) {
     .intro {
         flex-direction: column;
         flex-wrap: wrap;
@@ -1005,38 +1004,133 @@ header{
         margin: 0px;
         z-index: 2;
     }
-    
+        
+}
 }
 
+@media (max-height: 650px) {
+    .intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+        top: 15%;
+    }
 
-/*@media (width <= 1650px) {
-    .portrait{
-        position: absolute;
-        right:15%;
-        top:30%
+
+    .intro-content{
+        align-items: center;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portrait-size{
+        margin-left: 0px;
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 140%;
+    }
+
+    .about-anchor{
+        top: 120%;
+    }
+
+    .about-me-main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+
+    .about-me-paragraph{
+        text-align: center;
+    }
+
+
+    .skills-anchor-point{
+        top: 265%;
+    }
+
+    .skills{
+        top: 280%;
     }
 
     .skills-main{
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         position: absolute;
         top: 170%;
-        left: 10%;
-        right: 10%;
-        height: 600px;
+        width: 500px;
         padding: 0;
-        
     }
 
-    .about-me-paragraph{
-        display: flex;
-        font-family: "Montserrat", sans-serif;;
-        margin-right: 50px;
-        font-size: 12px;
-        color: white;
-        line-height: 2;
+
+    .hobbies-anchor-point{
+        top: 600%;
     }
+
+    .hobbies{
+        top: 620%;
+        width: 400px;
+    }
+
+    .projects-anchor-point{
+        top: 690%;
+    }
+
+
+    .projects{
+        top: 740%;
+    }
+    
+    .projects-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-title{
+        margin-left: 50px;
+    }
+
+    .contact-anchor-point{
+        top: 880%;
+    }
+
+
+    .contact{
+        top: 890%;
+    }
+
+    .email-input, .email-button{
+        width: 200px;
+    }
+
+    .contact-socials{
+        column-gap: 20px;
+    }
+
+    .email-button:active{
+        width: 180px;
+    }
+
+    .floatingToggle{
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 40px;
+        right: 50px;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+        z-index: 2;
+    }
+    
 }
-*/
+
+
+
