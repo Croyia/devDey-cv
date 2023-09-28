@@ -41,7 +41,7 @@ header{
     backdrop-filter: blur(20px);
     box-shadow: 0px -2px 6px rgb(5, 5, 5);
     min-height: 70px;
-    z-index: 2;
+    z-index: 9999;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -857,6 +857,129 @@ header{
 
     .contact{
         top: 520%;
+    }
+
+    .email-input, .email-button{
+        width: 200px;
+    }
+
+    .contact-socials{
+        column-gap: 20px;
+    }
+
+    .email-button:active{
+        width: 180px;
+    }
+
+    .floatingToggle{
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 40px;
+        right: 50px;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+        z-index: 2;
+    }
+    
+}
+
+@media (max-height: 800px) {
+    .intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+        top: 15%;
+    }
+
+
+    .intro-content{
+        align-items: center;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portrait-size{
+        margin-left: 0px;
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-anchor{
+        top: 95%;
+    }
+
+    .about-me-main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+
+    .about-me-paragraph{
+        text-align: center;
+    }
+
+
+    .skills-anchor-point{
+        top: 235%;
+    }
+
+    .skills{
+        top: 250%;
+    }
+
+    .skills-main{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 170%;
+        width: 500px;
+        padding: 0;
+    }
+
+
+    .hobbies-anchor-point{
+        top: 500%;
+    }
+
+    .hobbies{
+        top: 520%;
+        width: 400px;
+    }
+
+    .projects-anchor-point{
+        top: 570%;
+    }
+
+
+    .projects{
+        top: 610%;
+    }
+    
+    .projects-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-title{
+        margin-left: 50px;
+    }
+
+    .contact-anchor-point{
+        top: 700%;
+    }
+
+
+    .contact{
+        top: 720%;
     }
 
     .email-input, .email-button{
