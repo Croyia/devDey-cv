@@ -1008,7 +1008,7 @@ header{
 }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 300px) {
     .intro {
         flex-direction: column;
         flex-wrap: wrap;
