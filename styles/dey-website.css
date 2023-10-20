@@ -138,7 +138,7 @@ header{
     align-items: center;
     position: absolute;
     top: 30%;
-    width: 1000;
+    width: 1000px;
     
 }
 
@@ -662,6 +662,7 @@ td{
         flex-direction: column;
         flex-wrap: wrap;
         top: 15%;
+        width: auto;
     }
 
     
@@ -691,6 +692,7 @@ td{
         flex-direction: column;
         flex-wrap: wrap;
         width: 650px;
+        width: auto;
     }
 
     .about-me-paragraph{
@@ -716,6 +718,7 @@ td{
         top: 170%;
         width: 800px;
         padding: 0;
+        width: auto;
     }
 
 
@@ -740,6 +743,7 @@ td{
     .projects-main{
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
 
     .projects-title{
@@ -772,6 +776,7 @@ td{
         flex-direction: column;
         flex-wrap: wrap;
         top: 15%;
+        width: auto;
     }
 
 
@@ -799,7 +804,7 @@ td{
     .about-me-main{
         flex-direction: column;
         flex-wrap: wrap;
-        width: 300px;
+        width: auto;
     }
 
     .about-me-paragraph{
@@ -823,8 +828,9 @@ td{
         justify-content: center;
         position: absolute;
         top: 170%;
-        width: 800px;
+        width: auto;
         padding: 0;
+        
     }
 
 
@@ -850,6 +856,7 @@ td{
     .projects-main{
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
 
     .projects-title{
@@ -889,12 +896,146 @@ td{
         z-index: 2;
     }
     
+}
+
+@media (max-width: 320px) {
+    .intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+        top: 15%;
+        width: auto;
+    }
+
+
+    .intro-content{
+        align-items: center;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portrait{
+        width: auto;
+    }
+    .portrait-size{
+        margin-left: 0px;
+        width: auto;
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-anchor{
+        top: 95%;
+    }
+
+    .about-me-main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .about-me-paragraph{
+        text-align: center;
+    }
+
+
+    .skills-anchor-point{
+        top: 190%;
+    }
+
+    .skills{
+        top: 200%;
+    }
+
+    .skills-main{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 170%;
+        width: auto;
+        padding: 0;
+        
+    }
+
+
+    .hobbies-anchor-point{
+        top: 300%;
+    }
+
+    .hobbies{
+        top: 330%;
+        width: auto;
+    }
+
+
+    .projects-anchor-point{
+        top: 390%;
+    }
+
+
+    .projects{
+        top: 420%;
+        width: auto;
+    }
+    
+    .projects-main{
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .projects-title{
+        
+    }
+
+    .contact-anchor-point{
+        top: 510%;
+    }
+
+
+    .contact{
+        top: 520%;
+    }
+
+    .email-input, .email-button{
+        width: 200px;
+    }
+
+    .contact-socials{
+        column-gap: 20px;
+    }
+
+    .email-button:active{
+        width: 180px;
+    }
+
+    .floatingToggle{
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 40px;
+        right: 50px;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+        z-index: 2;
+    }
+    
+}
 
 @media (max-height: 800px), (max-width: 650px) {
     .intro {
         flex-direction: column;
         flex-wrap: wrap;
         top: 15%;
+        width: auto;
     }
 
 
@@ -922,7 +1063,7 @@ td{
     .about-me-main{
         flex-direction: column;
         flex-wrap: wrap;
-        width: 300px;
+        width: auto;
     }
 
     .about-me-paragraph{
@@ -946,7 +1087,7 @@ td{
         justify-content: center;
         position: absolute;
         top: 170%;
-        width: 500px;
+        width: auto;
         padding: 0;
     }
 
@@ -961,7 +1102,7 @@ td{
     }
 
     .hobbies-main{
-        width: 400px;
+        width: auto;
     }
 
     td{
@@ -980,6 +1121,7 @@ td{
     .projects-main{
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
 
     .projects-title{
@@ -1020,7 +1162,7 @@ td{
     }
         
 }
-}
+
 
 @media (max-height: 600px) {
     .intro {
