@@ -1323,7 +1323,7 @@ td{
 }
 
 
-@media (max-height: 600px) {
+@media (max-height: 700px) {
     .intro {
         flex-direction: column;
         flex-wrap: wrap;
@@ -1346,7 +1346,7 @@ td{
         display: flex;
         flex-direction: column;
         align-items: center;
-        top: 170%;
+        top: 175%;
     }
 
     .about-anchor{
@@ -1369,7 +1369,7 @@ td{
     }
 
     .skills{
-        top: 280%;
+        top: 285%;
     }
 
     .skills-main{
@@ -1447,7 +1447,7 @@ td{
     
 }
 
-@media (max-height: 450px) {
+@media (max-height: 600px) {
     .intro {
         flex-direction: column;
         flex-wrap: wrap;
@@ -1515,6 +1515,130 @@ td{
 
     .hobbies{
         top: 880%;
+        width: 400px;
+    }
+
+    .projects-anchor-point{
+        top: 1030%;
+    }
+
+
+    .projects{
+        top: 1050%;
+    }
+    
+    .projects-main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-title{
+        margin-left: 50px;
+    }
+
+    .contact-anchor-point{
+        top: 1260%;
+    }
+
+
+    .contact{
+        top: 1280%;
+    }
+
+    .email-input, .email-button{
+        width: 200px;
+    }
+
+    .contact-socials{
+        column-gap: 20px;
+    }
+
+    .email-button:active{
+        width: 180px;
+    }
+
+    .floatingToggle{
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        bottom: 40px;
+        right: 50px;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+        z-index: 2;
+    }
+    
+}
+
+@media (max-height: 420px) {
+    .intro {
+        flex-direction: column;
+        flex-wrap: wrap;
+        top: 15%;
+    }
+
+
+    .intro-content{
+        align-items: center;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portrait-size{
+        margin-left: 0px;
+    }
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 220%;
+    }
+
+    .about-anchor{
+        top: 200%;
+    }
+
+    .about-me-main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 300px;
+    }
+
+    .about-me-paragraph{
+        text-align: center;
+    }
+
+
+    .skills-anchor-point{
+        top: 390%;
+    }
+
+    .skills{
+        top: 410%;
+    }
+
+    .skills-main{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 170%;
+        width: 500px;
+        padding: 0;
+    }
+
+
+    .hobbies-anchor-point{
+        top: 860%;
+    }
+
+    .hobbies{
+        top: 890%;
         width: 400px;
     }
 
